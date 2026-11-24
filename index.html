@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A free, privacy-friendly toolkit for Bengali and English content creators.">
+  <meta name="theme-color" content="#101827">
+  <title>Bangla Creator Toolkit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">B</span><span>Bangla Creator <small>TOOLKIT</small></span></a>
+    <span class="privacy">● Works in your browser</span>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">FREE • OPEN SOURCE • PRIVACY FRIENDLY</p>
+      <h1>Create better content.<br><span>Write with confidence.</span></h1>
+      <p class="intro">A simple toolkit for Bengali and English creators. Clean text, shape captions and prepare hashtags — all in one place.</p>
+    </section>
+
+    <section class="workspace">
+      <div class="section-head">
+        <div><p class="eyebrow">YOUR WORKSPACE</p><h2>Text studio</h2></div>
+        <button id="clearBtn" class="button secondary" type="button">Clear text</button>
+      </div>
+      <label for="editor">Write or paste your caption</label>
+      <textarea id="editor" rows="8" placeholder="এখানে বাংলা অথবা English লেখা লিখুন..."></textarea>
+      <div class="stats" aria-live="polite">
+        <span><strong id="charCount">0</strong> characters</span>
+        <span><strong id="wordCount">0</strong> words</span>
+        <span><strong id="lineCount">0</strong> lines</span>
+      </div>
+
+      <div class="tools-grid">
+        <article class="tool-card">
+          <div class="tool-icon">Aa</div><h3>Clean text</h3>
+          <p>Remove extra spaces and tidy up line breaks.</p>
+          <button class="button primary" id="cleanBtn" type="button">Clean my text</button>
+        </article>
+        <article class="tool-card">
+          <div class="tool-icon">¶</div><h3>Caption format</h3>
+          <p>Separate a long caption into readable paragraphs.</p>
+          <button class="button primary" id="formatBtn" type="button">Format caption</button>
+        </article>
+        <article class="tool-card">
+          <div class="tool-icon">#</div><h3>Hashtag helper</h3>
+          <p>Build a neat hashtag line from your own keywords.</p>
+          <input id="keywords" type="text" placeholder="বাংলা, content, creator">
+          <button class="button primary" id="hashtagBtn" type="button">Make hashtags</button>
+        </article>
+      </div>
+      <div class="actions">
+        <button id="copyBtn" class="button primary" type="button">Copy text</button>
+        <span id="message" role="status" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Simple tools. Your words stay yours.</h2>
+      <p>This project runs locally in your browser. Your text is not uploaded to a server or stored by this website.</p>
+    </section>
+  </main>
+  <footer>Bangla Creator Toolkit <span>•</span> Open source project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
